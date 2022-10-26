@@ -1,0 +1,67 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* ***************************************
+        HEADER
+****************************************** */
+header {
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    height: 100px;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo_plateforme {
+    flex-basis: 10%;
+}
+
+.navig {
+    flex-basis: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.liste_liens {
+    display: flex;
+    list-style-type: none;
+}
+
+/* ***************************************
+        PREMIER BLOC (ACCROCHE)
+****************************************** */
+.accroche {
+    background-color: #336699;
+}
+
+/* ***************************************
+        DEUXIEME BLOC (INFORMATIONS)
+****************************************** */
+.informations {
+    background-color: #FFFFFF;
+}
+
+/* ***************************************
+        TROISIEME BLOC (TEMOIGNAGES)
+****************************************** */
+.temoins {
+    background-color: #FFA000
+}
+
+/* ***************************************
+        FOOTER
+****************************************** */
+footer {
+    background-color: #313131;
+    color: #F2FFFF;
+}
+footer a {
+    color: #F2FFFF;
+    text-decoration: none;
+}
