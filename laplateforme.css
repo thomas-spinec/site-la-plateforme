@@ -1,14 +1,31 @@
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+p, li, a, input, select, button {
+    font-family: 'Roboto', sans-serif;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+main a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 /* ***************************************
         HEADER
 ****************************************** */
 header {
     display: flex;
     background-color: #FFFFFF;
-    justify-content: space-around;
+    /* background-color: #d80808; */
+    justify-content: flex-start;
+    align-items: center;
     height: 100px;
+    margin-left:  0;
 }
 
 header a {
@@ -17,27 +34,57 @@ header a {
 }
 
 .logo_plateforme {
-    flex-basis: 10%;
+    width: 30%;
+    height: auto;
 }
 
-.navig {
-    flex-basis: 80%;
+nav {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .liste_liens {
     display: flex;
-    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    list-style-type: none
 }
 
 /* ***************************************
         PREMIER BLOC (ACCROCHE)
 ****************************************** */
 .accroche {
+    display: flex;
+    flex-flow: row wrap;
     background-color: #336699;
+    font-size: 46px;
+    color: #FFFFFF;
+}
+.asterisque {
+    font-size: 0.5em;
+    color: rgb(155, 155, 155);
+}
+.info_accueil {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+    flex-basis: 50%;
+}
+
+.illu_accueil {
+    flex-basis: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.bouton_rouge {
+    border-radius: 50px;
+    border-color: #FF2063;
+    background-color: #FF2063;
 }
 
 /* ***************************************
