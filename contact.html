@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="laplateforme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" 
+    rel="stylesheet">
+    <title>Ecole La Plateforme le campus méditerranéen du numérique</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo_plateforme" src="images/logo_laplateforme.png" alt="logo de La Plateforme">
+        <nav>
+            <ul class="liste_liens">
+                <li><a href="#">Qui sommes-nous ? </a></li>
+                <li><a href="#">AWS re/Start </a></li>
+                <li><a href="#">La Plateforme/Start </a></li>
+                <li><a href="#">Spécialisations </a></li>
+                <li><a href="#">Entreprise </a></li>
+                <li><a href="#">Kids </a></li>
+                <li><a href="#">News </a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="#">Français </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bleu">
+            <p>Vous souhaitez des informations ou candidater à La Plateforme_ ?</p>
+            <div class="bloc_formu">
+                <h1>Remplissez ce formulaire et nous reviendrons vers vous</h1>
+                <form class="formulaire" action="https://laplateforme.io/informations/" method="post">
+                    <!-- method="post" permet d'envoyer les données au serveur
+                    en les incluant dans le corps du formulaire -->
+                    <div class="left">
+                        <label for="formation"></label>
+                        <select name="formation" id="formation" required>
+                            <option value="" selected disabled hidden>La formation qui vous intéresse</option>
+                            <option value="Coding School">Coding School</option>
+                            <option value="">AI School</option>
+                            <option value="">Security School</option>
+                            <option value="">Bachelor IT</option>
+                            <option value="">Développeur web - TOULON</option>
+                            <option value="">Code à la carte - TOULON</option>
+                            <option value="">Code à la carte - BRIGNOLES</option>
+                            <option value="">Executive Education</option>
+                            <option value="">La Plateforme / START</option>
+                            <option value="">Innovation LAB</option>
+                            <option value="">AWS re/Start</option>
+                            <option value="">Je ne sais pas</option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <label for="entretien"></label>
+                        <select name="entretien" id="entretien" required>
+                            <option value="" disabled selected hidden>Souhaitez-vous passer un entretien préalable au test d'entrée ?</option>
+                            <option value="Oui">Oui, je souhaite passer un entretien avec un membre de l'équipe pédagogique pour avoir de plus amples informations</option>
+                            <option value="Non">Non, je souhaite candidater et passer le test d'entrée sans entretien préalable</option>
+                        </select>
+                    </div>
+                    <div class="left">
+                        <label for="prenom"></label>
+                        <input type="text" id="prenom" placeholder="Prénom">
+                    <div class="right">
+                        <label for="nom"></label>
+                        <input type="text" id="nom" placeholder="Nom">
+                    </div>
+                    <div class="left">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="right">
+                        <label for="telephone"></label>
+                        <input type="tel" id="telephone" placeholder="Téléphone">
+                    </div>
+                    <div class="middle">
+                        <label for="adresse"></label>
+                        <input type="text" id="adresse" placeholder="Adresse">
+                    </div>
+                    <div class="left">
+                        <label for="code_postal"></label>
+                        <input type="text" id="code_postal" placeholder="Code Postal">
+                    </div>
+                    <div class="right">
+                        <label for="ville"></label>
+                        <input type="text" id="ville" placeholder="Ville">
+                    </div>
+                    <div class="left">
+                        <label for="connu"></label>
+                        <input type="text" id="connu" placeholder="Comment nous avez-vous connu ?">
+                    </div>
+                    <div class="right">
+                        <label for="etude"></label>
+                        <input type="text" id="etude" placeholder="Quel est votre niveau d'étude">
+                    </div>
+                    <div class="middle">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <label for="newsletter"></label>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                            Inscrivez-vous à notre newsletter
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="blanche">
+            <div class="question">
+                <div class="texte_q">
+                    <h2>Une autre question ?</h2>
+                    <p>Nous sommes aussi joignables :</p>
+                </div>
+                <ul class="contact_li">
+                    <li class="li">Par email <a href="mailto:contact@laplateforme.io">contact@laplateforme.io</a></li>
+                    <li class="li">Par téléphone au 04.84.89.43.69 du lundi au vendredi de 9h à 17h</li>
+                    <li class="li">Sur les réseaux sociaux <ul class="logo_q">
+                        <li><a href="https://www.facebook.com/Plateforme.io">
+                            <img src="images/logo_facebook.png" alt="lien vers Facebook"></a></li>
+                        <li><a href="https://twitter.com/Plateforme_io">
+                            <img src="images/logo_twitter.png" alt="lien vers Twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/company/la-plateforme-io/">
+                            <img src="images/logo_linkedin.png" alt="lien vers Linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/la_plateforme_io/">
+                            <img src="images/logo_instagram.jpg" alt="lien vers Instagram"></a></li>
+                    </ul></li>
+                </ul>
+                <h2><a id="brochure" href="images/LaPlateforme_Brochure.pdf" alt="Lien de la brochure">Téléchargez notre brochure</a></h2>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.457038631928!2d5.367844315874519!3d43.3046910791347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0eb8146c2d1%3A0xb2df496224e0aafe!2s8%20Rue%20d&#39;Hozier%2C%2013002%20Marseille!5e0!3m2!1sfr!2sfr!4v1666884940764!5m2!1sfr!2sfr" 
+                width="800" height="600" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logos">
+            <img class="logo_footer" src="images/Logo_LaPLateforme_footer.svg" alt="logo de La Plateforme">
+            <ul class="reseaux">
+                <li><a href="#"><img class="logo_reseau" src="images/footer-picto-facebook.svg" alt=""></a></li>
+                <li><a href="#"><img class="logo_reseau" src="images/footer-picto-twitter.svg" alt=""></a></li>
+                <li><a href="#"><img class="logo_reseau" src="images/footer-picto-linkedin.svg" alt=""></a></li>
+                <li><a href="#"><img class="logo_reseau" src="images/footer-picto-instagram.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="info_pratique">
+            <div class="liste">
+                <h3>La Plateforme_</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="#">Notre brochure</a></li>
+                    <li><a href="#">Ils parlent de nous</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="liste">
+                <h3>Les Formations</h3>
+                <ul>
+                    <li><a href="#">La Plateforme/Start</a></li>
+                    <li><a href="#">Coding Scholl</a></li>
+                    <li><a href="#">Bachelor IT</a></li>
+                    <li><a href="#">Artificial Intelligence School</a></li>
+                    <li><a href="#">Cyber Security School</a></li>
+                </ul>
+            </div>
+            <div class="liste">
+                <h3>Informations</h3>
+                <ul>
+                    <li>8 rue d'hozier, 13002 Marseille</li>
+                    <li>Tel: 04.84.89.43.69</li>
+                    <li><button class="bouton_noir"><a href="contact.html">Contact</a></button></li>
+                </ul>
+        </div>
+    </footer>
+</body>
+</html>
