@@ -3,8 +3,36 @@ font-family: 'Roboto Slab', serif; */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 p, li, a, input, select, button {
     font-family: 'Roboto', sans-serif;
+}
+button {
+    border-radius: 100px;
+    border-width: 5px;
+    letter-spacing: 1px;
+    padding-right: 2em;
+    padding-left: 0.7em;
+    font-weight: bold;
+}
+
+button a {
+    padding-left: 5px;
 }
 
 body {
@@ -21,11 +49,11 @@ main a {
 header {
     display: flex;
     background-color: #FFFFFF;
-    /* background-color: #d80808; */
     justify-content: flex-start;
     align-items: center;
     height: 100px;
-    margin-left:  0;
+    margin:  0;
+    width: 100%;
 }
 
 header a {
@@ -39,10 +67,8 @@ header a {
 }
 
 nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    margin: 0;
+    width: 100%;
 }
 
 .liste_liens {
@@ -60,19 +86,21 @@ nav {
     display: flex;
     flex-flow: row wrap;
     background-color: #336699;
-    font-size: 46px;
+    font-size: 40px;
     color: #FFFFFF;
 }
 .asterisque {
-    font-size: 0.5em;
+    font-size: 20px;
     color: rgb(155, 155, 155);
 }
 .info_accueil {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: space-around;
-    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .illu_accueil {
@@ -82,9 +110,9 @@ nav {
 }
 
 .bouton_rouge {
-    border-radius: 50px;
     border-color: #FF2063;
     background-color: #FF2063;
+    font-size: 22px;
 }
 
 /* ***************************************
@@ -92,23 +120,181 @@ nav {
 ****************************************** */
 .informations {
     background-color: #FFFFFF;
+    color: #336699;
+    margin-bottom: 3%;
+}
+.informations h1 {
+    text-align: center;
+}
+.boite {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-left: 5%;
+    padding: 0;
 }
 
+.trio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 5.5%;
+    background-color: transparent;
+    box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+    border-radius: 10px;
+
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+    
+}
+.coding {
+    width: 100%;
+}
+
+.ia {
+    width: 100%;
+    height: auto;
+}
+
+.secur {
+    width: 100%;
+    height: auto;
+}
+
+.bouton_jaune {
+    border-color: #FFCA4B;
+    background-color: #FFCA4B;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+.boite2 {
+    display: flex;
+    flex-flow: column;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.duo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.texte {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 5.5%;
+    margin-bottom: 1%;
+    background-color: transparent;
+    box-shadow: 0px 0px 60px 0px rgb(71 74 182 / 12%);
+    border-radius: 10px;
+}
 /* ***************************************
         TROISIEME BLOC (TEMOIGNAGES)
 ****************************************** */
 .temoins {
-    background-color: #FFA000
+    background-color: #FFA000;
+    color: #FFFFFF;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.temoignage {
+    display: block;
+}
+
+.temoignage h2 {
+    text-align: center;
+
+}
+
+.temoignage p{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 5.5%;
+    margin-bottom: 3%;
+}
+
+.video {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* ***************************************
         FOOTER
 ****************************************** */
 footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #313131;
     color: #F2FFFF;
+    padding-top: 2%;
 }
 footer a {
     color: #F2FFFF;
     text-decoration: none;
+}
+
+.logos {
+   display: block;
+   text-align: center;
+   flex-basis: 10%;
+}
+
+.reseaux {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.reseaux a {
+    margin-right: 8px;
+
+}
+
+.logo_footer {
+    width: 100%;
+    height: auto;
+}
+
+.info_pratique {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-basis: 85%;
+}
+
+.liste {
+    padding-top: 0;
+    font-size: 16px;
+}
+.liste ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.bouton_noir {
+    border-color: #FFFFFF;
+    background-color: #2F2F2F;
+    font-size: 16px;
+    margin-bottom: 3%;
+    border-radius: 1px;
+    border-width: 2px;
 }
