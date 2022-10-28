@@ -19,6 +19,11 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 p, li, a, input, select, button {
     font-family: 'Roboto', sans-serif;
 }
@@ -306,9 +311,10 @@ footer a {
 ******************************************
 ****************************************** */
 
+
 /* ***************************************
-        Formulaire
-****************************************** */
+        Formulaire */
+
 
 .bleu {
     display: flex;
@@ -334,17 +340,19 @@ footer a {
     background-color: #FFFFFF;
     color: #275FA0;
     padding-top: 0.5%;
-    width: 70%;
+    width: 80%;
     text-align: center;
 }
 
 .formulaire {
     display: flex;
-    flex-flow: row wrap;;
-    height: 70%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-between;
+    width: 80%;
     margin: auto;
-    background-color: #FFFFFF;
-    overflow: hidden;
+    /* background-color: #ff0000; */
+    overflow: auto;
 }
 
 form div > input::placeholder,
@@ -355,12 +363,10 @@ form div > input::placeholder,
 
 form div > input, form div > select, form div > textarea {
     background-color: #FFFFFF;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: rgba(71,74,182,0.12);
     border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
     font-size: 18px;
 }
         
@@ -370,23 +376,40 @@ form button {
     color: #FFFFFF;
     font-size: 20px;
     border-width: 1px;
-    float: right;
 }
 
-.left {
-    float: left;
-    width: 50%;
-
-}
-
-.right {
-    float: right;
-    width: 50%;
+.box {
+    flex-basis: 48%;
+    /* padding: 5px; */
+    margin: 5px;
+    box-sizing: content-box;
+    width: 100%;
 }
 
 .middle {
-    width: auto;
-    border-width: 100%;
+    flex-basis: 96%;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+#entretien {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+#adresse {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.BasDeForm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
 }
 /* ***************************************
         Autres CONTACTS
@@ -399,6 +422,9 @@ form button {
     padding-bottom: 5%;
     background-color: #FEFEFF;
     color: #275FA0
+}
+.question p, .question li{
+    font-size: 18px;
 }
 
 .blanche a{
@@ -418,14 +444,178 @@ form button {
 
 .logo_q {
     display: flex;
-    /* flex-direction: row;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
-    align-content: flex-start; */
     list-style-type: none;
+    width: 10%;
 }
 .logo_q img{
-    width: 20%;
+    width: 80%;
     height: auto;
-    padding: 0;
+}
+
+
+
+/* ***************************************
+******************************************
+        Page NEWS
+******************************************
+****************************************** */
+
+/* Section bleue */
+
+.actu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #275FA0;
+}
+.actu h1 {
+    color: #FFFFFF
+}
+
+.actu p {
+    color: #D4CCFF
+}
+
+.actu div {
+    flex-basis: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#video_news {
+    width: 50%;
+    height: auto;
+}
+
+/* Section news */
+
+.FAL {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.FAL a {
+    text-decoration: none;
+    color: #333333;
+}
+
+article {
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #275FA0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+article a img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ***************************************
+******************************************
+        Page Qui sommes-nous ?
+******************************************
+****************************************** */
+
+/* Section qui sommes-nous ? */
+
+#qui_sommes_nous {
+    width: 80%;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+#qui_sommes_nous div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: #927F7D;
+}
+
+#qui_sommes_nous div p {
+    flex-basis: 45%;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Section des partenaires */
+
+#partenaires {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Section des certifications */
+
+#certifs {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #F6F6F6;
+}
+
+.certification {
+    width: 80%;
+    margin: auto;
+}
+
+#bloc_certifs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+#bloc_certifs div {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 20%;
+}
+
+/*  Section des presentation */
+#presentation_videos {
+    background-color: #FFFFFF;
+}
+
+.pres_vid {
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+}
+
+#video_pres {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#video_pres div {
+    flex-basis: 30%;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#video_pres div iframe {
+    width: 100%;
+    height: auto;
+}
+
+#video_pres div h4 {
+    color: #336699;
 }

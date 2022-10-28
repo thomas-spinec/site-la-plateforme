@@ -17,7 +17,7 @@
         <img class="logo_plateforme" src="images/logo_laplateforme.png" alt="logo de La Plateforme">
         <nav>
             <ul class="liste_liens">
-                <li><a href="#">Qui sommes-nous ? </a></li>
+                <li><a href="qui-sommes-nous.html">Qui sommes-nous ? </a></li>
                 <li><a href="#">AWS re/Start </a></li>
                 <li><a href="#">La Plateforme/Start </a></li>
                 <li><a href="#">Spécialisations </a></li>
@@ -29,6 +29,7 @@
             </ul>
         </nav>
     </header>
+    <hr>
     <main>
         <section class="bleu">
             <p>Vous souhaitez des informations ou candidater à La Plateforme_ ?</p>
@@ -37,7 +38,7 @@
                 <form class="formulaire" action="https://laplateforme.io/informations/" method="post">
                     <!-- method="post" permet d'envoyer les données au serveur
                     en les incluant dans le corps du formulaire -->
-                    <div class="left">
+                    <div class="box">
                         <label for="formation"></label>
                         <select name="formation" id="formation" required>
                             <option value="" selected disabled hidden>La formation qui vous intéresse</option>
@@ -55,46 +56,47 @@
                             <option value="">Je ne sais pas</option>
                         </select>
                     </div>
-                    <div class="right">
+                    <div class="box" id="entretien">
                         <label for="entretien"></label>
                         <select name="entretien" id="entretien" required>
-                            <option value="" disabled selected hidden>Souhaitez-vous passer un entretien préalable au test d'entrée ?</option>
+                            <option value="">Souhaitez-vous passer un entretien préalable au test d'entrée ?</option>
                             <option value="Oui">Oui, je souhaite passer un entretien avec un membre de l'équipe pédagogique pour avoir de plus amples informations</option>
                             <option value="Non">Non, je souhaite candidater et passer le test d'entrée sans entretien préalable</option>
                         </select>
                     </div>
-                    <div class="left">
+                    <div class="box">
                         <label for="prenom"></label>
                         <input type="text" id="prenom" placeholder="Prénom">
-                    <div class="right">
+                    </div>
+                    <div class="box">
                         <label for="nom"></label>
                         <input type="text" id="nom" placeholder="Nom">
                     </div>
-                    <div class="left">
+                    <div class="box">
                         <label for="email"></label>
                         <input type="email" id="email" placeholder="Email">
                     </div>
-                    <div class="right">
+                    <div class="box">
                         <label for="telephone"></label>
                         <input type="tel" id="telephone" placeholder="Téléphone">
                     </div>
-                    <div class="middle">
+                    <div class="middle" id="adresse">
                         <label for="adresse"></label>
                         <input type="text" id="adresse" placeholder="Adresse">
                     </div>
-                    <div class="left">
+                    <div class="box">
                         <label for="code_postal"></label>
                         <input type="text" id="code_postal" placeholder="Code Postal">
                     </div>
-                    <div class="right">
+                    <div class="box">
                         <label for="ville"></label>
                         <input type="text" id="ville" placeholder="Ville">
                     </div>
-                    <div class="left">
+                    <div class="box">
                         <label for="connu"></label>
                         <input type="text" id="connu" placeholder="Comment nous avez-vous connu ?">
                     </div>
-                    <div class="right">
+                    <div class="box">
                         <label for="etude"></label>
                         <input type="text" id="etude" placeholder="Quel est votre niveau d'étude">
                     </div>
@@ -102,13 +104,15 @@
                         <label for="message"></label>
                         <textarea name="message" id="message" cols="50" rows="10" placeholder="Message"></textarea>
                     </div>
-                    <div>
-                        <label for="newsletter"></label>
-                            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
-                            Inscrivez-vous à notre newsletter
-                    </div>
-                    <div class="button">
-                        <button type="submit">Envoyer</button>
+                    <div class="BasDeForm">
+                        <div id="news">
+                            <label for="newsletter"></label>
+                                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                                Inscrivez-vous à notre newsletter
+                        </div>
+                        <div class="button">
+                            <button type="submit">Envoyer</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -135,7 +139,7 @@
                 </ul>
                 <h2><a id="brochure" href="images/LaPlateforme_Brochure.pdf" alt="Lien de la brochure">Téléchargez notre brochure</a></h2>
             </div>
-            <div>
+            <div> <!-- Ajout de la carte -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.457038631928!2d5.367844315874519!3d43.3046910791347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0eb8146c2d1%3A0xb2df496224e0aafe!2s8%20Rue%20d&#39;Hozier%2C%2013002%20Marseille!5e0!3m2!1sfr!2sfr!4v1666884940764!5m2!1sfr!2sfr" 
                 width="800" height="600" style="border:0;" allowfullscreen="" 
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -157,10 +161,10 @@
                 <h3>La Plateforme_</h3>
                 <ul>
                     <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="#">Qui sommes-nous ?</a></li>
+                    <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
                     <li><a href="#">Notre brochure</a></li>
                     <li><a href="#">Ils parlent de nous</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="liste">
